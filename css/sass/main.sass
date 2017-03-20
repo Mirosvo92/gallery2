@@ -1,0 +1,396 @@
+@import url(reset.css)
+body
+	background-color: rgba(0,0,0,0.9)
+	display: flex
+	justify-content: center
+	align-items: center
+	display: flex
+	flex-direction: column
+	position: relative
+//loader_inner
+.loader 
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+.loader_inner
+	background-image: url("../img/preloader.gif")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 70px
+	width: 70px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute
+img
+	width: 100%
+	height: 100%
+	border-radius: 10px
+p
+	-moz-user-select: -moz-none
+	-o-user-select: none
+	-khtml-user-select: none
+	-webkit-user-select: none
+	user-select: none
+// hidden
+.hidden
+	opacity: 0
+//wrap_img
+//wrap_gallery
+.wrap_gallery
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	max-width: 1024px
+	width: 100%
+	height: 90%
+	background-color: #d4dfe3
+	margin: 0px 15px
+	white-space: nowrap
+	overflow: auto
+	overflow-y: hidden
+	position: relative
+	padding-bottom: 5px
+.all_photo
+	width: 100%
+	height: 100%
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	.flex_con1
+		width: 50%
+		height: 100%
+		overflow: hidden
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		position: relative
+	.flex_con2
+		width: 50%
+		height: 100%
+		overflow: hidden
+		display: flex
+		flex-wrap: wrap
+		flex-direction: column
+		position: relative
+.con1_im1
+	width: 100%
+	overflow: hidden
+	height: 33%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 1
+	position: relative
+.con1_im2
+	width: 50%
+	height: 33%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 2
+	position: relative
+.con1_im3
+	width: 50%
+	height: 33%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 3
+	position: relative
+.con1_im4
+	width: 100%
+	height: 33%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 4
+	position: relative
+//con2_im1
+.con2_im1
+	height: 66%
+	width: 50%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 1
+	position: relative
+.con2_im2
+	height: 33%
+	width: 50%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 2
+	position: relative
+.con2_im3
+	height: 33%
+	width: 50%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 3
+	position: relative
+.con2_im4
+	height: 33%
+	width: 50%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 4
+	position: relative
+.con2_im5
+	height: 33%
+	width: 50%
+	padding: 5px
+	box-sizing: border-box
+	flex-grow: 5
+	position: relative
+//add_photo
+.add_photo
+	max-width: 69px
+	width: 100%
+	height: 11%
+	background-color: #fafafa
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	order: 1
+	align-self: flex-end
+	position: absolute
+	right: 0
+	z-index: 999
+	bottom: 0
+	border-radius: 10px
+	.uploadbutton
+		.button
+			width: 100px
+			height: 20px
+			background: #81889D
+			color: #eaeaea
+			cursor: pointer
+			padding: 5px 11px 5px 11px
+			text-align: center
+			border-radius: 5px
+			border-radius: 50%
+			font-size: 30px
+			&:hover
+				color: #fff
+				transition: all 0.5s ease
+			&:active
+				color: red
+		.but_add
+			display: none
+	p
+		padding-top: 8px
+		color: grey
+	.close_add_photo
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		padding: 6px 7px 12px 9px
+		position: absolute
+		background: #000
+		top: 0
+		left: 0
+		color: #fff
+		cursor: pointer
+//wrap_photo
+//info like
+.wrap_info_like
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	text-align: center
+	opacity: 0
+	transition: all 0.5s
+	display: flex
+	align-items: flex-end
+	justify-content: center
+	.info_like
+		height: 25%
+		width: 98.5%
+		background-color: #fff
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.coutn_comment
+		padding-left: 2%
+		position: relative
+		i
+			padding: 0px 10%
+			position: relative
+	.count_like
+		padding-right: 7%
+		i
+			padding: 0px 10%
+			position: relative
+			p
+				position: absolute
+				top: -73%
+				right: -10%
+				background-color: #fff
+				border: 1px solid grey
+				border-radius: 50%
+				padding: 2px
+				font-size: 11px
+.text_coutn_comment
+	position: absolute
+	top: -53%
+	right: -23%
+	background-color: #fff
+	border: 1px solid grey
+	border-radius: 50%
+	padding: 2px
+	font-size: 11px
+//comments
+.common_style_popup
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.65)
+	display: flex
+	z-index: 1000
+	top: 0
+	left: 0
+	.wrap_big_photo_comments
+		width: 70%
+		height: 70%
+		display: flex
+		margin: auto
+		background-color: #fff
+		.wrap_big_photo
+			width: 50%
+			height: 100%
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			position: relative
+			border-radius: 5px
+			img
+				height: 87%
+			.vote
+				display: flex
+				width: 29%
+				position: absolute
+				bottom: 2%
+				right: 0
+				.plus_like
+					background-color: #e9e9e9
+					padding: 25px
+					width: 10%
+					height: 5%
+					margin-right: 5px
+					cursor: pointer
+					position: relative
+					border-radius: 10px
+					.plus
+						position: absolute
+						border: 2px solid grey
+						background-color: #fff
+						border-radius: 50%
+						right: 12px
+						top: 5px
+						padding: 2px
+						color: blue
+				.minus_like
+					background-color: #e9e9e9
+					padding: 25px
+					width: 10%
+					height: 5%
+					cursor: pointer
+					border-radius: 10px
+					.minus
+						position: absolute
+						border: 2px solid grey
+						background-color: #fff
+						border-radius: 50%
+						right: 12px
+						top: 5px
+						padding: 2px
+						color: blue
+.wrap_commens
+	width: 50%
+	height: 96%
+	display: flex
+	justify-content: flex-end
+	align-items: flex-start
+	flex-direction: column-reverse
+	position: relative
+	padding: 10px
+	margin-left: 15px
+	box-sizing: border-box
+	.wrap_send
+		align-self: flex-end
+		background-color: #87CEEB
+		height: 13%
+		width: 12%
+		position: absolute
+		bottom: 10px
+		right: 95px
+		text-align: center
+		cursor: pointer
+		display: flex
+		.fa-envelope-o
+			margin: auto
+	.nickname
+		outline: none
+		border-left: none
+		border-right: none
+		border-top: none
+		width: 80%
+		height: 8%
+		margin-bottom: 10px
+	.dataComments
+		width: 65%
+		height: 12%
+		resize: none
+		outline: none
+	.list_comments
+		height: 70%
+		width: 80%
+		flex: 1
+		display: flex
+		overflow: auto
+		flex-direction: column
+		text-align: center
+	.wrap_quantity_comments
+		width: 60%
+		height: 5%
+		font-size: 20px
+		color: grey	
+	.close_popup
+		width: 8%
+		height: 9%
+		align-self: flex-end
+		background: url(../img/close_ic.png) no-repeat
+		background-size: cover
+		cursor: pointer
+.wrap_one_com
+	min-height: min-content /* needs vendor prefixes */
+	display: flex
+	width: 90%
+	justify-content: space-between
+	flex-wrap: wrap
+	margin-top: 20px
+	.name_who_com
+		width: 15%
+		height: 10%
+		font-size: 12px
+		color: grey
+	.date_com
+		min-width: 15%
+		height: 40px
+		font-size: 12px
+		color: grey
+	.text_com
+		width: 80%
+		height: 10%
+		margin: auto
+		font-size: 12px
+		color: grey
+		border: .5px solid grey
+		padding: 4px

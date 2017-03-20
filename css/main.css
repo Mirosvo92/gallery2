@@ -1,0 +1,636 @@
+@import url(reset.css);
+/* line 2, sass/main.sass */
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+
+/* line 11, sass/main.sass */
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+/* line 21, sass/main.sass */
+.loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute; }
+
+/* line 33, sass/main.sass */
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+
+/* line 37, sass/main.sass */
+p {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none; }
+
+/* line 44, sass/main.sass */
+.hidden {
+  opacity: 0; }
+
+/* line 48, sass/main.sass */
+.wrap_gallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1024px;
+  width: 100%;
+  height: 90%;
+  background-color: #d4dfe3;
+  margin: 0px 15px;
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+  position: relative;
+  padding-bottom: 5px; }
+
+/* line 62, sass/main.sass */
+.all_photo {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 68, sass/main.sass */
+  .all_photo .flex_con1 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative; }
+  /* line 76, sass/main.sass */
+  .all_photo .flex_con2 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative; }
+
+/* line 84, sass/main.sass */
+.con1_im1 {
+  width: 100%;
+  overflow: hidden;
+  height: 33%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative; }
+
+/* line 92, sass/main.sass */
+.con1_im2 {
+  width: 50%;
+  height: 33%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  position: relative; }
+
+/* line 99, sass/main.sass */
+.con1_im3 {
+  width: 50%;
+  height: 33%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  position: relative; }
+
+/* line 106, sass/main.sass */
+.con1_im4 {
+  width: 100%;
+  height: 33%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 4;
+  -webkit-flex-grow: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  position: relative; }
+
+/* line 114, sass/main.sass */
+.con2_im1 {
+  height: 66%;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative; }
+
+/* line 121, sass/main.sass */
+.con2_im2 {
+  height: 33%;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  position: relative; }
+
+/* line 128, sass/main.sass */
+.con2_im3 {
+  height: 33%;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  position: relative; }
+
+/* line 135, sass/main.sass */
+.con2_im4 {
+  height: 33%;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 4;
+  -webkit-flex-grow: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  position: relative; }
+
+/* line 142, sass/main.sass */
+.con2_im5 {
+  height: 33%;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-flex: 5;
+  -webkit-flex-grow: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  position: relative; }
+
+/* line 150, sass/main.sass */
+.add_photo {
+  max-width: 69px;
+  width: 100%;
+  height: 11%;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  bottom: 0;
+  border-radius: 10px; }
+  /* line 167, sass/main.sass */
+  .add_photo .uploadbutton .button {
+    width: 100px;
+    height: 20px;
+    background: #81889D;
+    color: #eaeaea;
+    cursor: pointer;
+    padding: 5px 11px 5px 11px;
+    text-align: center;
+    border-radius: 5px;
+    border-radius: 50%;
+    font-size: 30px; }
+    /* line 178, sass/main.sass */
+    .add_photo .uploadbutton .button:hover {
+      color: #fff;
+      -webkit-transition: all 0.5s ease;
+              transition: all 0.5s ease; }
+    /* line 181, sass/main.sass */
+    .add_photo .uploadbutton .button:active {
+      color: red; }
+  /* line 183, sass/main.sass */
+  .add_photo .uploadbutton .but_add {
+    display: none; }
+  /* line 185, sass/main.sass */
+  .add_photo p {
+    padding-top: 8px;
+    color: grey; }
+  /* line 188, sass/main.sass */
+  .add_photo .close_add_photo {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 6px 7px 12px 9px;
+    position: absolute;
+    background: #000;
+    top: 0;
+    left: 0;
+    color: #fff;
+    cursor: pointer; }
+
+/* line 201, sass/main.sass */
+.wrap_info_like {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  /* line 213, sass/main.sass */
+  .wrap_info_like .info_like {
+    height: 25%;
+    width: 98.5%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 220, sass/main.sass */
+  .wrap_info_like .coutn_comment {
+    padding-left: 2%;
+    position: relative; }
+    /* line 223, sass/main.sass */
+    .wrap_info_like .coutn_comment i {
+      padding: 0px 10%;
+      position: relative; }
+  /* line 226, sass/main.sass */
+  .wrap_info_like .count_like {
+    padding-right: 7%; }
+    /* line 228, sass/main.sass */
+    .wrap_info_like .count_like i {
+      padding: 0px 10%;
+      position: relative; }
+      /* line 231, sass/main.sass */
+      .wrap_info_like .count_like i p {
+        position: absolute;
+        top: -73%;
+        right: -10%;
+        background-color: #fff;
+        border: 1px solid grey;
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 11px; }
+
+/* line 240, sass/main.sass */
+.text_coutn_comment {
+  position: absolute;
+  top: -53%;
+  right: -23%;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 11px; }
+
+/* line 250, sass/main.sass */
+.common_style_popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  top: 0;
+  left: 0; }
+  /* line 259, sass/main.sass */
+  .common_style_popup .wrap_big_photo_comments {
+    width: 70%;
+    height: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    background-color: #fff; }
+    /* line 265, sass/main.sass */
+    .common_style_popup .wrap_big_photo_comments .wrap_big_photo {
+      width: 50%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      position: relative;
+      border-radius: 5px; }
+      /* line 273, sass/main.sass */
+      .common_style_popup .wrap_big_photo_comments .wrap_big_photo img {
+        height: 87%; }
+      /* line 275, sass/main.sass */
+      .common_style_popup .wrap_big_photo_comments .wrap_big_photo .vote {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 29%;
+        position: absolute;
+        bottom: 2%;
+        right: 0; }
+        /* line 281, sass/main.sass */
+        .common_style_popup .wrap_big_photo_comments .wrap_big_photo .vote .plus_like {
+          background-color: #e9e9e9;
+          padding: 25px;
+          width: 10%;
+          height: 5%;
+          margin-right: 5px;
+          cursor: pointer;
+          position: relative;
+          border-radius: 10px; }
+          /* line 290, sass/main.sass */
+          .common_style_popup .wrap_big_photo_comments .wrap_big_photo .vote .plus_like .plus {
+            position: absolute;
+            border: 2px solid grey;
+            background-color: #fff;
+            border-radius: 50%;
+            right: 12px;
+            top: 5px;
+            padding: 2px;
+            color: blue; }
+        /* line 299, sass/main.sass */
+        .common_style_popup .wrap_big_photo_comments .wrap_big_photo .vote .minus_like {
+          background-color: #e9e9e9;
+          padding: 25px;
+          width: 10%;
+          height: 5%;
+          cursor: pointer;
+          border-radius: 10px; }
+          /* line 306, sass/main.sass */
+          .common_style_popup .wrap_big_photo_comments .wrap_big_photo .vote .minus_like .minus {
+            position: absolute;
+            border: 2px solid grey;
+            background-color: #fff;
+            border-radius: 50%;
+            right: 12px;
+            top: 5px;
+            padding: 2px;
+            color: blue; }
+
+/* line 315, sass/main.sass */
+.wrap_commens {
+  width: 50%;
+  height: 96%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+  padding: 10px;
+  margin-left: 15px;
+  box-sizing: border-box; }
+  /* line 326, sass/main.sass */
+  .wrap_commens .wrap_send {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    background-color: #87CEEB;
+    height: 13%;
+    width: 12%;
+    position: absolute;
+    bottom: 10px;
+    right: 95px;
+    text-align: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    /* line 337, sass/main.sass */
+    .wrap_commens .wrap_send .fa-envelope-o {
+      margin: auto; }
+  /* line 339, sass/main.sass */
+  .wrap_commens .nickname {
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 80%;
+    height: 8%;
+    margin-bottom: 10px; }
+  /* line 347, sass/main.sass */
+  .wrap_commens .dataComments {
+    width: 65%;
+    height: 12%;
+    resize: none;
+    outline: none; }
+  /* line 352, sass/main.sass */
+  .wrap_commens .list_comments {
+    height: 70%;
+    width: 80%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+  /* line 360, sass/main.sass */
+  .wrap_commens .wrap_quantity_comments {
+    width: 60%;
+    height: 5%;
+    font-size: 20px;
+    color: grey; }
+  /* line 365, sass/main.sass */
+  .wrap_commens .close_popup {
+    width: 8%;
+    height: 9%;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    background: url(../img/close_ic.png) no-repeat;
+    background-size: cover;
+    cursor: pointer; }
+
+/* line 372, sass/main.sass */
+.wrap_one_com {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 20px; }
+  /* line 379, sass/main.sass */
+  .wrap_one_com .name_who_com {
+    width: 15%;
+    height: 10%;
+    font-size: 12px;
+    color: grey; }
+  /* line 384, sass/main.sass */
+  .wrap_one_com .date_com {
+    min-width: 15%;
+    height: 40px;
+    font-size: 12px;
+    color: grey; }
+  /* line 389, sass/main.sass */
+  .wrap_one_com .text_com {
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    font-size: 12px;
+    color: grey;
+    border: 0.5px solid grey;
+    padding: 4px; }
+
+/*# sourceMappingURL=main.css.map */
